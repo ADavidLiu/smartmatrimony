@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Female avatar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blog-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-page-not-complete" transform="translate(-172.000000, -196.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Female-avatar" transform="translate(172.000000, 196.000000)">
+                <path d="M32,44.8 C20.7655058,44.8004943 9.72907197,47.7582586 0,53.376 L0,64 L64,64 L64,53.376 C54.2809095,47.7342036 43.2378799,44.7746716 32,44.8 Z" id="Shape"></path>
+                <path d="M32,38.4 C40.0630601,39.4617986 48.2632826,38.5616403 55.904,35.776 C55.904,35.776 48,31.52 48,16 C48,7.163444 40.836556,5.41083001e-16 32,0 C23.163444,-5.41083001e-16 16,7.163444 16,16 C16,31.52 8.096,35.776 8.096,35.776 C15.7367174,38.5616403 23.9369399,39.4617986 32,38.4 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

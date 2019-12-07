@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blog-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-page-not-complete" transform="translate(-1385.000000, -385.000000)" fill="#F86849" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(1366.000000, 381.000000)">
+                <g id="cog" transform="translate(19.000000, 4.000000)">
+                    <path d="M3.94,6.5 L2.22,3.64 L3.64,2.22 L6.5,3.94 C7.02,3.64 7.6,3.4 8.2,3.24 L9,0 L11,0 L11.8,3.24 C12.4,3.4 12.98,3.64 13.5,3.94 L16.36,2.22 L17.78,3.64 L16.06,6.5 C16.36,7.02 16.6,7.6 16.76,8.2 L20,9 L20,11 L16.76,11.8 C16.6,12.4 16.36,12.98 16.06,13.5 L17.78,16.36 L16.36,17.78 L13.5,16.06 C12.98,16.36 12.4,16.6 11.8,16.76 L11,20 L9,20 L8.2,16.76 C7.6,16.6 7.02,16.36 6.5,16.06 L3.64,17.78 L2.22,16.36 L3.94,13.5 C3.64,12.98 3.4,12.4 3.24,11.8 L0,11 L0,9 L3.24,8.2 C3.4,7.6 3.64,7.02 3.94,6.5 Z M10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 C8.34314578,7.00000003 7.00000006,8.34314578 7.00000006,10 C7.00000006,11.6568542 8.34314578,13 10,13 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

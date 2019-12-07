@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blog-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-with-Register" transform="translate(-477.000000, -5292.000000)">
+            <g id="Testimonials" transform="translate(249.000000, 5285.000000)">
+                <g id="Group-2" transform="translate(228.000000, 7.000000)">
+                    <circle id="Oval-2" fill="#2CA0D2" cx="41" cy="41" r="41"></circle>
+                    <g id="user" transform="translate(23.000000, 21.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M9.25,9.25 C9.25,4.14136606 13.3913661,9.3844083e-16 18.5,0 C23.6086339,-9.3844083e-16 27.75,4.14136606 27.75,9.25 L27.75,12.95 C27.75,18.0586339 23.6086339,22.2 18.5,22.2 C13.3913661,22.2 9.25,18.0586339 9.25,12.95 L9.25,9.25 Z M0,30.858 C5.62123992,27.6020926 12.0039089,25.8915373 18.5,25.9 C25.234,25.9 31.561,27.6945 37,30.858 L37,37 L0,37 L0,30.858 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

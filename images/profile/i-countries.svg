@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>globe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blog-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-page-Copy-2" transform="translate(-790.000000, -713.000000)" fill="#BAB6BD" fill-rule="nonzero">
+            <g id="globe" transform="translate(790.000000, 713.000000)">
+                <path d="M10,20 C4.4771525,20 6.76353751e-16,15.5228475 0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 C15.5228475,3.38176876e-16 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z M12,17.75 C13.549397,17.3485996 14.9427714,16.4916743 16,15.29 L16,9 C14.8954305,9 14,8.1045695 14,7 L14,3.07 C13.0770534,2.53913778 12.0568746,2.19907818 11,2.07 L11,3 C11,4.1045695 10.1045695,5 9,5 L9,6 C9,7.1045695 8.1045695,8 7,8 L7,10 L10,10 C11.1045695,10 12,10.8954305 12,12 L12,17.75 Z M8,17.75 L8,15 C6.8954305,15 6,14.1045695 6,13 L6,12 L5.5,12 C4.67157288,12 4,11.3284271 4,10.5 L4,8 L2.25,8 C1.14903306,12.2796979 3.72198184,16.6425241 8,17.75 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="22px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-card" transform="translate(-251.000000, -240.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2.09999996">
+            <g id="Group-2" transform="translate(189.000000, 232.000000)">
+                <g id="star-full" transform="translate(65.000000, 11.000000)">
+                    <polygon id="Shape" points="8.5 14.0961857 3.24681947 17 4.25044685 10.8493643 0 6.4936429 5.87340974 5.59618574 8.5 0 11.1265903 5.59618574 17 6.4936429 12.7495531 10.8493643 13.7531805 17"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
