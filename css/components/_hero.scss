@@ -1,0 +1,106 @@
+.hero {
+    background-image: linear-gradient(to right, $color-dark-3, $color-dark-6);
+    position: relative;
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        padding: 1.667rem 0 3.333rem 0;
+        @include atMedium {
+            padding: 6rem 0 8.125rem 0;
+        }
+
+        &-register {
+            transition: all .25s;
+        }
+
+        &-login {
+            transition: all .25s;
+            position: absolute;
+            top: 1.667rem;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transform: translateY(-2rem);
+            opacity: 0;
+            pointer-events: none;
+            @include atMedium {
+                top: 6rem;
+            }
+        }
+    }
+
+    &__scroll {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        bottom: 3.333rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @include atMedium {
+            display: block;
+            bottom: 2.5rem;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, .18);
+        pointer-events: none
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: none;
+        @include atMedium {
+            display: block;
+            pointer-events: none;
+            bottom: 0;
+            right: 0;
+            width: 45%;
+            height: 85%;
+            background-image: url("../images/hero-woman.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+        @include atExtrahuge {
+            right: 3.125rem;
+        }
+    }
+
+    &--login {
+        &:before {
+            @include atMedium {
+                background-image: url("../images/hero-couple.png");
+                width: 58%;
+            }
+            @include atExtralarge {
+                width: 55%;
+            }
+            @include atExtrahuge {
+                right: 0;
+            }
+        }
+
+        .hero__content {
+            &-register {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            &-login {
+                opacity: 1;
+                pointer-events: all;
+                transform: none;
+            }
+        }
+    }
+}

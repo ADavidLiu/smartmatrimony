@@ -1,0 +1,93 @@
+.views {
+    &__list {
+        max-height: 370px;
+        overflow-y: auto;
+        @include atMedium {
+            max-height: 410px;
+        }
+        @include atLarge {
+            max-height: 440px;
+        }
+        @include atExtralarge {
+            max-height: 350px;
+        }
+    }
+
+    &__track {
+        overflow: hidden;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        &-img {
+            height: 7.5rem;
+            height: 7.5rem;
+            min-width: 7.5rem;
+            min-width: 7.5rem;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-right: 2.083rem;
+            @include atMedium {
+                height: 5.625rem;
+                width: 5.625rem;
+                min-height: 5.625rem;
+                min-width: 5.625rem;
+                margin-right: 1.5625rem;
+            }
+        }
+
+        &-copy {
+            flex: 1;
+            @include atExtralarge {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .btn {
+                @include atExtralarge {
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        &-date {
+            @include atExtralarge {
+                white-space: nowrap;
+            }
+        }
+
+        &-details {
+            @include atExtralarge {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        & + & {
+            margin-top: 3.333rem;
+            @include atMedium {
+                margin-top: 2.5rem;
+            }
+        }
+
+        &--small {
+            .views {
+                &__item {
+                    &-img {
+                        height: 4rem;
+                        width: 4rem;
+                        min-height: 4rem;
+                        min-width: 4rem;
+                        margin-right: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

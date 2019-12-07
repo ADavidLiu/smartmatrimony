@@ -1,0 +1,53 @@
+.cards-slider {
+    padding: 5rem 0 3.333rem 0;
+    @include atMedium {
+        padding: 9.625rem 0 0 0;
+    }
+
+    &__list {
+        @include atSmall {
+            margin-left: -11.5rem;
+        }
+        @include atMedium {
+            margin-left: -32.25rem;
+        }
+        @include atLarge {
+            width: 100%;
+            max-width: 930px;
+            margin: 0 auto;
+        }
+        @include atExtralarge {
+            max-width: 1110px;
+        }
+        @include atHuge {
+            max-width: 1170px;
+        }
+    }
+
+    .slick {
+        &-track {
+            padding: 4.167rem 0 3.333rem 0;
+            @include atMedium {
+                padding: 4.6875rem 0 5.3125rem 0;
+            }
+        }
+
+        &-list {
+            margin: 0 -10px;
+            margin-left: -7rem;
+            @include atMedium {
+                margin-left: -10px;
+            }
+        }
+
+        &-slide {
+            margin: 0 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+/* Planilla: 316 6958488 */

@@ -1,0 +1,52 @@
+.news {
+    padding: 6.25rem 0 2.5rem 0;
+    background-color: $color-dark-3;
+    @include atMedium {
+        padding: 9.375rem 0 4.6875rem 0;
+    }
+
+    &__main {
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        padding-top: 1.667rem;
+        border-top: 1px solid $color-gray-alt;
+
+        &-img {
+            width: 5.333rem;
+            margin-right: 2.083rem;
+            @include atMedium {
+                width: 8.5rem;
+                margin-right: 0;
+                margin-left: 1.5625rem;
+            }
+            @include atLarge {
+                margin-left: 3rem;
+            }
+        }
+
+        &:first-child {
+            @include atMedium {
+                border-top: 0;
+                padding-top: 0;
+            }
+        }
+
+        & + & {
+            margin-top: 1.667rem;
+            @include atMedium {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 3.333rem;
+        @include atMedium {
+            margin-top: 3.75rem;
+        }
+    }
+}

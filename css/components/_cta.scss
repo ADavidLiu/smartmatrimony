@@ -1,0 +1,24 @@
+.cta {
+    background-color: $color-primary;
+
+    &__content {
+        padding: 6.25rem 0;
+        @include atMedium {
+            padding: 15.125rem 0;
+        }
+    }
+    
+    &__img {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        height: 30rem;
+        @include atMedium {
+            height: 100%;
+            background-position: center bottom;
+        }
+        @include atLarge {
+            background-position: center top;
+        }
+    }
+}

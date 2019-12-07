@@ -1,0 +1,75 @@
+.features {
+    padding: 0 2.083rem;
+    @include atMedium {
+        width: 100%;
+        max-width: none !important;
+        padding: 0 !important;
+        margin-top: 7.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__img {
+        @include atMedium {
+            width: 45%;
+        }
+    }
+
+    &__content {
+        margin-top: 2.5rem;
+        @include atMedium {
+            margin-top: 0;
+            margin-left: 4.375rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            flex: 1;
+            padding-right: 4.875rem;
+        }
+        @include atLarge {
+            padding-right: 8vw;
+        }
+    }
+
+    &__item {
+        @include atMedium {
+            margin-bottom: 3.4375rem;
+            margin-right: 1.875rem;
+        }
+        @include atExtralarge {
+            width: calc(50% - 1.875rem);
+        }
+
+        &-icon {
+            margin-right: 1.667rem;
+            width: 5.583rem;
+            @include atMedium {
+                margin-right: 1rem;
+                width: 4.1875rem;
+            }
+
+            &--small {
+                width: 3.167rem;
+                @include atMedium {
+                    width: 2.375rem;
+                }
+            }
+        }
+
+        & + & {
+            margin-top: 2.083rem;
+            @include atMedium {
+                margin-top: 0;
+            }
+        }
+
+        &--alt {
+            margin: 0;
+            @include atExtralarge {
+                width: 100%;
+            }
+        }
+    }
+}

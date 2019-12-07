@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+
+    &__item {
+        & + & {
+            margin-left: 2.5rem;
+            @include atMedium {
+                margin-left: 1.875rem;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 2.5rem;
+        @include linkStates($color-white, none);
+        @include atMedium {
+            font-size: 1.875rem;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

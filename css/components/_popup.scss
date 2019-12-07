@@ -1,0 +1,116 @@
+.popup {
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, .7);
+        opacity: 0;
+        transition: all .25s;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        max-width: 670px;
+        margin: 0 auto;
+        transform: translateY(-2rem);
+        opacity: 0;
+        transition: all .25s;
+
+        &-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 1.667rem;
+            @include atMedium {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        &-main {
+            background-color: $color-white;
+            border-radius: 6px;
+            box-shadow: 0 2px 9px 2px rgba($color-black, .5);
+
+            &-header {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                padding: 1.667rem;
+                text-align: center;
+                border-bottom: 1px solid $color-gray-alt-4;
+                text-transform: uppercase;
+                @include atMedium {
+                    padding: 1.25rem;
+                }
+
+                &--only {
+                    padding: 3.125rem;
+                    border-radius: 6px;
+                }
+            }
+
+            &-principal {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                padding: 4.167rem;
+                @include atMedium {
+                    padding: 3.125rem;
+                }
+
+                &--alt {
+                    padding: 1.667rem 0;
+                    @include atMedium {
+                        padding: 1.25rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-icon {
+            margin-left: 8px;
+        }
+    }
+
+    &--active {
+        pointer-events: all;
+
+        .popup {
+            &__wrapper {
+                opacity: 1;
+            }
+
+            &__content {
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+}

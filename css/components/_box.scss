@@ -1,0 +1,60 @@
+.box {
+    padding: 1.167rem 1rem;
+    background-color: $color-white;
+    box-shadow: 0 2px 9px 2px rgba($color-black, .27);
+    text-align: center;
+    @include atMedium {
+        padding: 1rem;
+        height: 100%;
+    }
+
+    &__content {
+        border-width: 2px;
+        border-style: solid;
+        padding: 2.5rem 1.5rem 1.667rem 1.5rem;
+        height: 100%;
+        @include atMedium {
+            padding: 1.875rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        &--promo {
+            @include atMedium {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+        }
+
+        &--bronze {
+            border-color: $color-bronze;
+        }
+        
+        &--silver {
+            border-color: $color-silver;
+        }
+        
+        &--gold {
+            border-color: $color-gold;
+        }
+    }
+
+    &__main {
+        * {
+            line-height: 2.9167rem;
+            @include atMedium {
+                line-height: 2.1875rem;
+            }
+        }
+    }
+
+    &__btn {
+        @extend .btn--bg-primary;
+
+        &--selected {
+            @extend .btn--bg-accent;
+        }
+    }
+}

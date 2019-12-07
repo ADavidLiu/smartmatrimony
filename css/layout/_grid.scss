@@ -1,0 +1,9 @@
+.container {
+    padding: 0 2.083rem;
+    @include atSmall {
+        padding: 0 15px;
+    }
+    @include atHuge {
+        max-width: 1200px;
+    }
+}

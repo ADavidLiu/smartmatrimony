@@ -1,0 +1,30 @@
+.promo-card {
+    height: auto;
+    
+    &__content {
+        @include atMedium {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+        }
+    }
+
+    &__icon {
+        filter: brightness(0);
+        width: 8rem;
+    }
+
+    &__copy {
+        @include atMedium {
+            margin-left: 2.5rem;   
+        }
+
+        &--no-icon {
+            @include atMedium {
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+    }
+}

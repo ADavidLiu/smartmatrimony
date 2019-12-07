@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    max-width: 213px;
+    width: 75%;
+    @include atMedium {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &--white {
+        filter: brightness(0) invert(1);
+    }
+
+    &--small {
+        width: 5.833rem;
+        @include atMedium {
+            width: 4.375rem;
+        }
+    }
+}

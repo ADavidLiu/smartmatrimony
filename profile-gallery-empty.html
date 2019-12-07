@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matrimony | Half Your Deen. All Of Our Purpose.</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/Smartmatrimony_TT_Commons_+_Futura.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="popup message-popup" data-popup-target="popup-message">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-message">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header">
+                                        <h4>SEND A MESSAGE TO <span class="message-popup__name"></span></h4>
+                                    </div>
+                                    <div class="popup__content-main-principal">
+                                        <form action="#" class="message-popup__form">
+                                            <textarea placeholder="Type your message..." class="dark u-margin-bottom-big"></textarea>
+                                            <div class="u-align-inline-center">
+                                                <button class="btn btn--mobile-full btn--padding btn--bg-primary btn--round">SEND</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup favourite-popup" data-popup-target="popup-favourite">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-favourite">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header popup__content-main-header--only">
+                                        <h4>YOU HAVE <span class="favourite-popup__state"></span> <span class="favourite-popup__name"></span> AS A FAVOURITE!</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header header--profile">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto header__main">
+                    <a href="#" class="d-md-none logo logo--small">
+                        <img src="images/logo-small.svg" alt="Logo" class="logo__img">
+                    </a>
+                    <a href="#" class="d-none d-md-block logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="col-auto d-md-none header__main">
+                    <button class="header__btn">
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                    </button>
+                </div>
+                <nav class="col-12 col-md-auto header__nav">
+                    <div class="header__nav-content">
+                        <ul class="header__menu menu">
+                            <li class="order-md-3 menu__item menu__item--active">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-home.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">HOME</p>
+                                </a>
+                            </li>
+                            <li class="order-md-1 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-search.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">SEARCH</p>
+                                </a>
+                            </li>
+                            <li class="order-md-2 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-messages.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MESSAGES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-heart.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR MATCHES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-star.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR FAVOURITES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-eye.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">PROFILE VISITORS</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-profile.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY PROFILE</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-gear.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY ACCOUNT</p>
+                                </a>
+                            </li>
+                            <li class="order-md-12 d-none d-md-inline-block menu__item menu__item--alt">
+                                <div class="menu__dropdown">
+                                    <img src="images/i-person.svg" alt="Icon" class="menu__icon menu__dropdown-trigger">
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY PROFILE</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY ACCOUNT</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">LOGOUT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__contact">
+                            <div class="header__contact-info">
+                                <p class="paragraph--med u-color-primary u-font-main-bld u-margin-bottom-smallest">ADDRESS</p>
+                                <p class="paragraph--med u-color-white">
+                                    <span class="u-font-main-bld">Smart Matrimony</span>
+                                    <br>First Floor
+                                    <br>85 Great Portland Street
+                                    <br>London
+                                    <br>W1W 7LT</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <ul class="social align-items-center justify-content-start">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-facebook social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-twitter social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-instagram social__icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paragraph--big">
+                                    <a href="#" class="u-color-white">Logout</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile">
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-12 col-md-7">
+                        <div class="banner__profile">
+                            <div class="banner__profile-img banner__profile-img--avatar" style="background-image: url('images/female-avatar.svg');"></div>
+                            <div class="banner__profile-copy">
+                                <h3 class="u-margin-bottom-small u-margin-md-bottom-smallest-2">FATIMAH YAMAHA <span class="card__btn card__btn--banner card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="FATIMAH YAMAHA"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></span></h3>
+                                <div class="banner__profile-facts">
+                                    <div>
+                                        <p class="paragraph--med u-font-titles u-color-gray-alt-4">OCCUPATION</p>
+                                        <p class="u-color-white">Musician</p>
+                                    </div>
+                                    <div>
+                                        <p class="paragraph--med u-font-titles u-color-gray-alt-4">AGE</p>
+                                        <p class="u-color-white">33</p>
+                                    </div>
+                                    <div>
+                                        <p class="paragraph--med u-font-titles u-color-gray-alt-4">LOCATION</p>
+                                        <p class="u-color-white">Preston</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="banner__actions">
+                            <a href="#" class="btn btn--full btn--med btn--round btn--bg-primary btn--padding btn--icon" data-popup-trigger="popup-message" data-profile-name="FATIMAH YAMAHA"><img src="images/i-envelope-primary.svg" alt="Icon" class="btn__icon btn__icon--primary-hover-white"> <span class="paragraph--smaller btn__center">Send a message</span></a>
+                            <button class="btn btn--full btn--border btn--border-white btn--med btn--round btn--padding btn--icon profile__btn-gallery-access" data-profile-gallery-requested><img src="images/i-image-dark.svg" alt="Icon" class="btn__icon btn__icon--dark-hover-white"> <span class="paragraph--smaller btn__center"><span class="profile__btn-gallery-access-label">Request</span> gallery access</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="profile__actions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-md-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="profile__actions-item">
+                                <img src="images/i-pen-dark.svg" alt="Icon" class="profile__actions-item-icon">
+                                <p class="paragraph--smaller u-color-gray-alt-8">Add note</p>
+                            </div>
+                            <div class="profile__actions-item">
+                                <img src="images/i-block-dark.svg" alt="Icon" class="profile__actions-item-icon">
+                                <p class="paragraph--smaller u-color-gray-alt-8">Block/report user</p>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="profile__actions-item">
+                                <img src="images/i-cog.svg" alt="Icon" class="profile__actions-item-icon">
+                                <p class="paragraph--smaller u-color-gray-alt-8">Settings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container nav__container">
+                <div class="nav__menu">
+                    <div class="nav__track">
+                        <div class="nav__item">
+                            <div href="#" class="nav__link nav__link--tab">
+                                <img src="images/i-summary-primary-drk.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">SUMMARY</p>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <div href="#" class="nav__link nav__link--active nav__link--tab">
+                                <img src="images/i-gallery-primary-drk.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">GALLERY</p>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <div href="#" class="nav__link nav__link--tab">
+                                <img src="images/i-personality-primary-drk.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">PERSONALITY</p>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <div href="#" class="nav__link nav__link--tab">
+                                <img src="images/i-ideal-partner-primary-drk.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">IDEAL PARTNER</p>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <div href="#" class="nav__link nav__link--tab">
+                                <img src="images/i-interests-primary-drk.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">INTERESTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="profile__content">
+            <div class="profile__content-item"></div>
+            <div class="profile__content-item profile__content-item--active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="profile__message u-align-inline-center u-margin-vertical-huge">
+                                <img src="images/i-sad-face.svg" alt="Icon" class="u-margin-bottom-small">
+                                <p class="paragraph--huge u-color-gray-alt-4 u-font-main-bld u-lh-1-25 u-margin-bottom-small">Oh no! It looks like this user hasn’t <br class="d-none d-md-block">uploaded any images yet.</p>
+                                <button class="btn btn--auto btn--border btn--med btn--round btn--padding btn--icon"><img src="images/i-image-dark.svg" alt="Icon" class="btn__icon"> <span class="paragraph--smaller btn__center">Request image</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__content-item"></div>
+            <div class="profile__content-item"></div>
+            <div class="profile__content-item"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-3 offset-md-0 footer__logo">
+                    <a href="#" class="logo logo--white"><img src="images/logo.svg" alt="Logo" class="logo__img"></a>
+                </div>
+                <nav class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 offset-md-1 footer__nav">
+                    <p class="u-color-white u-font-main-bld">Smart Matrimony</p>
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="u-color-white">First Floor<br>85 Great Portland Street<br>London<br>W1W 7LT</p>
+                        </div>
+                        <div class="col-5 col-sm-4 offset-sm-1">
+                            <ul class="footer__menu">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Legal Stuff</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ's</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-2 offset-md-0 offset-md-1 footer__social">
+                    <ul class="social align-items-center justify-content-start">
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                    <p class="paragraph--big u-color-gray">Smartmatrimony © 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

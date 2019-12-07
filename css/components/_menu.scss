@@ -1,0 +1,280 @@
+.menu {
+    padding-top: 1.5rem;
+    @include atMedium {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        position: relative;
+        transition: all .25s;
+
+        & + & {
+            margin-top: 1.5rem;
+            @include atMedium {
+                margin-top: 0;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-white;
+            border-radius: 5rem;
+            height: 200%;
+            width: 100%;
+            background-color: $color-white;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .25s;
+            @include atMedium {
+                height: 100%;
+            }
+        }
+
+        &--active,
+        &:hover {
+            padding-left: 1.5rem;
+            @include atMedium {
+                padding-left: 0;
+            }
+
+            .menu {
+                &__label {
+                    color: $color-dark-7;
+                }
+
+                &__icon {
+                    filter: brightness(0);
+                }
+            }
+            
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &--alt {
+            padding-top: 1.5rem;
+            border-top: 1px solid $color-gray-alt;
+            display: inline-block;
+            @include atMedium {
+                padding-top: 0;
+                margin-left: 1.125rem;
+                border-top: 0;
+                border-left: 1px solid $color-gray-alt;
+            }
+
+            .menu {
+                &__icon {
+                    filter: brightness(0) invert(1);
+                    @include atMedium {
+                        display: block;
+                    }
+                }
+
+                &__link {
+                    @include atMedium {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                padding-left: 0;
+                padding-right: 0;
+
+                .menu {
+                    &__icon {
+                        filter: none;
+                    }
+                }
+            }
+
+            &:last-child {
+                @include atMedium {
+                    .menu__link {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include atMedium {
+            padding: .5rem 1.5625rem .78125rem 1.5625rem;
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+        height: 2.167rem;
+        width: 2.167rem;
+        transition: all .25s;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &__label {
+        color: $color-white;
+        font-family: $font-titles;
+        font-size: 1.9167rem;
+        transform: translateZ(0) translateY(-1px);
+        transition: all .25s;
+        display: block;
+        width: 100%;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        filter: blur(0.000001px);
+        backface-visibility: hidden;
+        @include atMedium {
+            transform: translateY(3px);
+            font-size: 1rem;
+            line-height: 1.5625rem;
+        }
+    }
+
+    &__dropdown {
+        position: relative;
+        @include atMedium {
+            padding-left: 1.25rem;
+        }
+        
+        &-trigger {
+            cursor: pointer;
+        }
+
+        &-list {
+            position: absolute;
+            z-index: 1;
+            backface-visibility: hidden;
+            bottom: 0;
+            right: 0;
+            transform: translateY(100%);
+            text-align: left;
+            border-radius: 6px;
+            background-color: $color-white;
+            box-shadow: 0 2px 9px 2px rgba($color-black, .5);
+            min-width: 100%;
+            white-space: nowrap;
+            transition: all .25s;
+            pointer-events: none;
+            opacity: 0;
+
+            &-item {
+                cursor: pointer;
+                transition: all .25s;
+                overflow: hidden;
+                font-family: $font-main-dem;
+                @extend .paragraph;
+                @extend .paragraph--med;
+
+                &-icon {
+                    font-size: 1.667rem;
+                    color: $color-white;
+                    backface-visibility: hidden;
+                    height: 3.333rem;
+                    width: 3.333rem;
+                    border-radius: 50%;
+                    background-color: $color-primary;
+                    transition: all .25s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include atMedium {
+                        font-size: 1.25rem;
+                        height: 2.5rem;
+                        width: 2.5rem;
+                    }
+
+                    &:hover {
+                        background-color: $color-primary-drk;
+                    }
+                }
+
+                &:first-child {
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                }
+                
+                &:last-child {
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-white;
+                }
+
+                &--icon {
+                    text-align: center;
+                    padding: 0;
+                    right: -40%;
+                    transform: translateX(40%);
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            &-link {
+                display: block;
+                padding: 1rem 2rem 1rem 1.125rem;
+                @include linkStates($color-dark-3, none);
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+
+            &--icon {
+                background: transparent;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10rem;
+            height: 14rem;
+            pointer-events: none;
+        }
+
+        &:hover {
+            .menu__dropdown {
+                &-list {
+                    opacity: 1;
+                    bottom: -1rem;
+                    pointer-events: all;
+                }
+            }
+
+            &:before {
+                pointer-events: all;
+            }
+        }
+    }
+}

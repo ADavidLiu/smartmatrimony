@@ -1,0 +1,40 @@
+.how {
+    position: relative;
+    z-index: 1;
+
+    &__img {
+        width: 80%;
+        margin: 6.667rem 0 0 auto;
+        display: block;
+        @include atMedium {
+            margin: 0;
+            width: auto;
+        }
+        @include atExtralarge {
+            transform-origin: 100% 100%;
+            transform: scale(1.3);
+        }
+        @include atHuge {
+            transform: scale(1.25);
+        }
+    }
+
+    &__steps {
+        @include atMedium {
+            max-width: 420px;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to left, $color-gray-alt, rgba($color-gray-alt, 0));
+        @include atMedium {
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,264 @@
+.filters {
+    position: relative;
+
+    &__bar {
+        background-color: $color-accent;
+        padding: 1.25rem 0;
+        position: relative;
+        z-index: 2;
+        @include atMedium {
+            padding: .9375rem 0;
+        }
+
+        &-container {
+            padding-left: 0 !important;
+            @include atSmall {
+                max-width: 100%;
+            }
+            @include atMedium {
+                padding-left: 15px !important;
+                max-width: 720px;
+            }
+            @include atLarge {
+                max-width: 960px;
+            }
+            @include atExtralarge {
+                max-width: 1140px;
+            }
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-btn {
+            border-radius: 10rem;
+            background-color: $color-primary-drk;
+            font-family: $font-main-dem;
+            font-size: 1.167rem;
+            color: $color-white;
+            border: 0;
+            height: 37px;
+            width: 74px;
+            letter-spacing: .7px;
+            cursor: pointer;
+            transition: all .25s;
+            @include atMedium {
+                font-size: .875rem;
+                width: 120px;
+            }
+
+            &:hover {
+                color: $color-dark-3;
+                background-color: $color-white;
+            }
+        }
+
+        &-tags {
+            width: 70%;
+            position: relative;
+            overflow: hidden;
+            @include atSmall {
+                width: 80%;
+            }
+            @include atMedium {
+                flex: 1;
+                width: auto;
+                max-width: 90%;
+            }
+
+            &-list {
+                display: flex;
+                align-content: center;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-left: 2.083rem;
+                white-space: nowrap;
+                width: 100%;
+                @include atMedium {
+                    padding-left: 0;
+                }
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 8.9167rem;
+                background-image: linear-gradient(to left, #2CA0D2 22%, rgba(44,160,210,0.00) 97%);
+                pointer-events: none;
+                @include atMedium {
+                    width: 6.6875rem;
+                }
+            }
+        }
+
+        &-tag {
+            color: $color-white;
+            background-color: $color-accent-drk;
+            border-radius: 10rem;
+            height: 37px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+            white-space: nowrap;
+            transition: all .25s;
+            opacity: 0;
+            pointer-events: none;
+            max-width: 0;
+            padding: 0;
+            margin-right: 0;
+            @extend .paragraph;
+            @extend .paragraph--smallest;
+
+            &-remove {
+                width: 10px;
+                transform: translateY(-1px);
+                margin-left: 1rem;
+                display: none;
+                cursor: pointer;
+                @include atMedium {
+                    display: block;
+                }
+            }
+
+            &--active {
+                opacity: 1;
+                pointer-events: all;
+                max-width: initial;
+                padding: 0 1.667rem;
+                margin-right: 8px;
+                @include atMedium {
+                    margin-right: 1.125rem;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__clear {
+        color: $color-white;
+        text-decoration: underline;
+        display: inline-flex;
+        align-items: center;
+        transition: all .25s;
+        white-space: nowrap;
+        cursor: pointer;
+        padding-right: 10rem;
+        opacity: 0;
+        pointer-events: none;
+        @extend .paragraph;
+        @extend .paragraph--smallest;
+        @include atMedium {
+            padding-right: 6rem;
+        }
+
+        &:hover {
+            color: $color-dark-3;
+        }
+
+        &--mobile {
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            height: 0;
+            @extend .paragraph--smaller;
+            @include atMedium {
+                display: none;
+            }
+
+            &.filters__clear--active {
+                height: auto;
+                margin: 1.333rem auto 0 auto;
+            }
+        }
+
+        &--active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        z-index: 3;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        transform: translateY(100%);
+        display: none;
+        padding: 3.125rem 0;
+        background-color: $color-accent-lgt;
+        @include atMedium {
+            padding: 3.125rem 0 3.75rem 0;
+        }
+
+        &-row {
+            @include atMedium {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            & + & {
+                margin-top: 2.5rem;
+                @include atMedium {
+                    margin-top: 1.875rem;
+                }
+            }
+        }
+
+        &-group {
+            @include atMedium {
+                width: calc(33.333% - 1.75rem);
+            }
+
+            &-inputs {
+                @include atMedium {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: space-between;
+                }
+            }
+
+            &-input {
+                @include atMedium {
+                    flex: 1 1 0;
+                }
+
+                & + & {
+                    margin-top: 2.5rem;
+                    @include atMedium {
+                        margin-top: 0;
+                        margin-left: 2.5rem;
+                    }
+                }
+            }
+
+            & + & {
+                margin-top: 2.5rem;
+                @include atMedium {
+                    margin-top: 0;
+                    margin-left: 2.5rem;
+                }
+            }
+        }
+
+        &-btn {
+            &:hover {
+                color: $color-dark-3;
+                background-color: $color-white;
+                border-color: $color-white;
+            }
+        }
+    }
+}

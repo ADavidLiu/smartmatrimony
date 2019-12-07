@@ -1,0 +1,131 @@
+.account {
+    &__nav,
+    &__main {
+        @include atMedium {
+            padding-top: 4.375rem;
+        }
+    }
+
+    &__menu {
+        &-item {
+            cursor: pointer;
+            transition: all .25s;
+            @extend .paragraph;
+            @extend .paragraph--big;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+            & + & {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+
+    &__group {
+        padding: 2rem;
+        border: 1px solid $color-dark;
+
+        &-controls {
+            @include atMedium {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            &-title {
+                margin-bottom: 5px;
+                @include atMedium {
+                    width: 45%;
+                }
+                @include atLarge {
+                    width: 33.333%;
+                }
+            }
+
+            &-main {
+                @include atMedium {
+                    flex: 1;
+                }
+            }
+
+            &-form {
+                input {
+                    & + input {
+                        margin-top: 2rem;
+                        @include atMedium {
+                            margin-top: 1.5rem;
+                        }
+                    }
+                }
+
+                button {
+                    margin-top: 2rem;
+                    @include atMedium {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+
+            [data-switch-state] {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            & + & {
+                margin-top: 2rem;
+            }
+        }
+
+        & + & {
+            margin-top: 2.5rem;
+            @include atMedium {
+                margin-top: 1.875rem;
+            }
+        }
+    }
+
+    &__subgroup {
+        & + & {
+            margin-top: 3.333rem;
+        }
+    }
+
+    &__event {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+
+        &-description {
+            padding-right: 1rem;
+            @include atMedium {
+                width: 50%;
+                padding-right: 2rem;
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            &-item {
+                & + & {
+                    margin-left: 1rem;
+                    @include atMedium {
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+
+        & + & {
+            margin-top: 1.333rem;
+        }
+    }
+}

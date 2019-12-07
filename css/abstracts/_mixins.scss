@@ -1,0 +1,57 @@
+@mixin atSmall {
+    @media screen and (min-width: 576px) {
+        @content
+    }
+};
+
+@mixin atMedium {
+    @media screen and (min-width: 768px) {
+        @content
+    }
+};
+
+@mixin atLarge {
+    @media screen and (min-width: 992px) {
+        @content
+    }
+};
+
+@mixin atExtralarge {
+    @media screen and (min-width: 1200px) {
+        @content
+    }
+};
+
+@mixin atHuge {
+   @media screen and (min-width: 1400px) {
+       @content
+   } 
+};
+
+@mixin atExtrahuge {
+   @media screen and (min-width: 1625px) {
+       @content
+   } 
+};
+
+@mixin linkStates($color, $decoration) {
+    &:link,
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        color: $color;
+        text-decoration: $decoration;
+    }
+};
+
+@mixin breakLong {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

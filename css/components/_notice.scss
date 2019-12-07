@@ -1,0 +1,39 @@
+.notice {
+    background-color: $color-accent;
+    padding: 1.5rem 0;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all .25s;
+    @include atMedium {
+        padding: 1.25rem 0;
+    }
+
+    &__icon {
+        filter: brightness(0) invert(1);
+        margin-right: 10px;
+    }
+
+    &__close {
+        padding-left: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        margin-top: 5px;
+        @include atMedium {
+            margin-top: 0;
+        }
+
+        &-icon {
+            margin-left: 8px;
+        }
+    }
+
+    &--dismissed {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

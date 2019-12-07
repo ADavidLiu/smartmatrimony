@@ -1,0 +1,35 @@
+.membership-popup {
+    &__form {
+        input {
+            display: none;
+
+            &:checked {
+                & + .membership-popup__form-label {
+                    background-color: $color-primary;
+
+                    p {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        &-label {
+            padding: 1.25rem 4.167rem;
+            border: 0;
+            transition: all .25s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include atMedium {
+                padding: .9375rem 3.125rem;
+            }
+
+            p {
+                color: $color-gray-alt-5;
+                transition: all .25s;
+            }
+        }
+    }
+}

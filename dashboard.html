@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matrimony | Half Your Deen. All Of Our Purpose.</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/Smartmatrimony_TT_Commons_+_Futura.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="popup message-popup" data-popup-target="popup-message">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-message">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header">
+                                        <h4>SEND A MESSAGE TO <span class="message-popup__name"></span></h4>
+                                    </div>
+                                    <div class="popup__content-main-principal">
+                                        <form action="#" class="message-popup__form">
+                                            <textarea placeholder="Type your message..." class="dark u-margin-bottom-big"></textarea>
+                                            <div class="u-align-inline-center">
+                                                <button class="btn btn--mobile-full btn--padding btn--bg-primary btn--round">SEND</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup favourite-popup" data-popup-target="popup-favourite">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-favourite">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header popup__content-main-header--only">
+                                        <h4>YOU HAVE <span class="favourite-popup__state"></span> <span class="favourite-popup__name"></span> AS A FAVOURITE!</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto header__main">
+                    <a href="#" class="d-md-none logo logo--small">
+                        <img src="images/logo-small.svg" alt="Logo" class="logo__img">
+                    </a>
+                    <a href="#" class="d-none d-md-block logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="col-auto d-md-none header__main">
+                    <button class="header__btn">
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                    </button>
+                </div>
+                <nav class="col-12 col-md-auto header__nav">
+                    <div class="header__nav-content">
+                        <ul class="header__menu menu">
+                            <li class="order-md-3 menu__item menu__item--active">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-home.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">HOME</p>
+                                </a>
+                            </li>
+                            <li class="order-md-1 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-search.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">SEARCH</p>
+                                </a>
+                            </li>
+                            <li class="order-md-2 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-messages.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MESSAGES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-heart.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR MATCHES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-star.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR FAVOURITES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-eye.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">PROFILE VISITORS</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-profile.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY PROFILE</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-gear.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY ACCOUNT</p>
+                                </a>
+                            </li>
+                            <li class="order-md-12 d-none d-md-inline-block menu__item menu__item--alt">
+                                <div class="menu__dropdown">
+                                    <img src="images/i-person.svg" alt="Icon" class="menu__icon menu__dropdown-trigger">
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY PROFILE</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY ACCOUNT</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">LOGOUT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__contact">
+                            <div class="header__contact-info">
+                                <p class="paragraph--med u-color-primary u-font-main-bld u-margin-bottom-smallest">ADDRESS</p>
+                                <p class="paragraph--med u-color-white">
+                                    <span class="u-font-main-bld">Smart Matrimony</span>
+                                    <br>First Floor
+                                    <br>85 Great Portland Street
+                                    <br>London
+                                    <br>W1W 7LT</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <ul class="social align-items-center justify-content-start">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-facebook social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-twitter social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-instagram social__icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paragraph--big">
+                                    <a href="#" class="u-color-white">Logout</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="notice">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-md-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-start justify-content-start align-items-md-center">
+                            <img src="images/i-info.svg" alt="Information icon" class="notice__icon">
+                            <p class="u-font-titles paragraph--small-2 u-color-white">YOU HAVEN’T COMPLETED YOUR QUESTIONNAIRE — <a href="#" class="u-color-white hover-dark u-underline">CLICK HERE</a> TO COMPLETE IT</p>
+                        </div>
+                        <div class="notice__close">
+                            <p class="u-color-white">Dismiss</p>
+                            <img src="images/i-close.svg" alt="Close notice" class="notice__close-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-12 col-md-8">
+                        <div class="banner__profile">
+                            <div class="banner__profile-img banner__profile-img--empty"><span>Upload<br>a photo</span></div>
+                            <div class="banner__profile-copy">
+                                <div class="d-none d-md-block">
+                                    <p class="u-color-white u-margin-bottom-smallest">Hello</p>
+                                    <h3 class="u-margin-bottom-smallest-2">KASHIF BHATTI</h3>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-start align-items-center">
+                                    <div class="banner__profile-info">
+                                        <p class="u-color-white"><span class="u-font-main-dem u-color-gold">GOLD</span> MEMBER</p>
+                                        <a href="#" class="btn btn--round btn--small btn--bg-accent"><span class="btn__center u-lh-1 u-font-main-dem u-color-white">Upgrade</span></a>
+                                    </div>
+                                    <div class="banner__profile-actions">
+                                        <a href="#" class="banner__profile-help">
+                                            <img src="images/i-lifebelt.svg" alt="Lifebelt icon" class="banner__profile-help-icon">
+                                            <p class="u-font-main-dem u-color-gray-alt-4 banner__profile-help-label">Help</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex col-12 col-md-4 align-items-center justify-content-end">
+                        <div class="banner__bg-edit">
+                            <img src="images/i-image.svg" alt="Icon" class="banner__bg-edit-icon">
+                            <p class="paragraph--small-3 banner__bg-edit-label">Set a<br>background image</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="nav">
+            <div class="container nav__container">
+                <div class="nav__menu">
+                    <div class="nav__track">
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-search-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">SEARCH</p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-messages-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label nav__label--tag">MESSAGES <span class="nav__tag nav__tag--big">12</span></p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-matches-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label nav__label--tag">YOUR MATCHES <span class="nav__tag">8</span></p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-favorites-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">YOUR FAVOURTIES</p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link" data-scroll-to="visitors">
+                                <img src="images/i-visitors-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">PROFILE VISITORS</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="profile-cards profile-cards--bar u-padding-top-med-2 u-padding-md-top-3 u-padding-md-bottom-null bg-shape bg-shape--width-55 bg-shape--primary-drk">
+            <div class="container bg-shape__content">
+                <div class="row profile-cards__intro">
+                    <div class="col-12">
+                        <div class="d-md-flex justify-content-md-between align-items-md-center">
+                            <div>
+                                <p class="paragraph--small u-color-white u-color-md-gray u-font-titles">MATCHES</p>
+                                <h2 class="u-margin-bottom-med u-margin-vertical-smaller u-margin-md-bottom-big">YOUR LATEST<br>MATCHES</h2>
+                            </div>
+                            <a href="#" class="d-none d-md-block btn">SEE ALL MATCHES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container profile-cards__container bg-shape__content u-margin-bottom-big u-margin-md-bottom-null">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile-cards__list profile-cards__list--finite profile-cards__list--static">
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-none container bg-shape__content u-padding-bottom-small">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" class="btn btn--mobile-full">VIEW ALL MATCHES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="u-padding-vertical-big-2 u-padding-md-bottom-big u-padding-md-top-big-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 u-margin-bottom-huge-4 u-margin-md-bottom-null">
+                        <div class="u-margin-bottom-small-3 u-margin-md-bottom-med-3">
+                            <p class="paragraph--small u-color-gray u-font-titles">MESSAGES</p>
+                            <h2 class="u-margin-vertical-smaller u-margin-md-bottom-big">TALK TODAY</h2>
+                        </div>
+                        <div class="messages">
+                            <div class="messages__list u-margin-bottom-huge-3" data-simplebar>
+                                <div class="messages__track">
+                                    <div class="messages__item">
+                                        <div class="messages__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="messages__item-copy">
+                                            <div class="messages__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">Julie6258</p>
+                                                <p class="paragraph--big u-margin-bottom-smallest-2">Sent you a message</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start messages__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                            <a href="#" class="btn btn--border btn--fit btn--padding-small btn--icon btn--round"><img src="images/i-envelope-dark.svg" alt="Envelope icon" class="btn__icon btn__icon--med"> <span class="paragraph--small-2 u-font-main-dem">Read message</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="messages__item-copy">
+                                            <div class="messages__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">Julie6258</p>
+                                                <p class="paragraph--big u-margin-bottom-smallest-2">Sent you a message</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start messages__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                            <a href="#" class="btn btn--border btn--fit btn--padding-small btn--icon btn--round"><img src="images/i-envelope-dark.svg" alt="Envelope icon" class="btn__icon btn__icon--med"> <span class="paragraph--small-2 u-font-main-dem">Read message</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="messages__item-copy">
+                                            <div class="messages__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">Julie6258</p>
+                                                <p class="paragraph--big u-margin-bottom-smallest-2">Sent you a message</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start messages__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                            <a href="#" class="btn btn--border btn--fit btn--padding-small btn--icon btn--round"><img src="images/i-envelope-dark.svg" alt="Envelope icon" class="btn__icon btn__icon--med"> <span class="paragraph--small-2 u-font-main-dem">Read message</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="messages__item-copy">
+                                            <div class="messages__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">Julie6258</p>
+                                                <p class="paragraph--big u-margin-bottom-smallest-2">Sent you a message</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start messages__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                            <a href="#" class="btn btn--border btn--fit btn--padding-small btn--icon btn--round"><img src="images/i-envelope-dark.svg" alt="Envelope icon" class="btn__icon btn__icon--med"> <span class="paragraph--small-2 u-font-main-dem">Read message</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="messages__item">
+                                        <div class="messages__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="messages__item-copy">
+                                            <div class="messages__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">Julie6258</p>
+                                                <p class="paragraph--big u-margin-bottom-smallest-2">Sent you a message</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start messages__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                            <a href="#" class="btn btn--border btn--fit btn--padding-small btn--icon btn--round"><img src="images/i-envelope-dark.svg" alt="Envelope icon" class="btn__icon btn__icon--med"> <span class="paragraph--small-2 u-font-main-dem">Read message</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--bg-primary btn--mobile-full">VIEW ALL</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 offset-lg-1" data-scroll-target="visitors">
+                        <div class="u-margin-bottom-small-3 u-margin-md-bottom-med-3">
+                            <p class="paragraph--small u-color-gray u-font-titles">PROFILE VIEWS</p>
+                            <h2 class="u-margin-vertical-smaller u-margin-md-bottom-big">WHO’S VISITED</h2>
+                        </div>
+                        <div class="views">
+                            <div class="views__list" data-simplebar>
+                                <div class="views__track">
+                                    <div class="views__item">
+                                        <div class="views__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="views__item-copy">
+                                            <div class="views__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">User1234 viewed your profile</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start views__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views__item">
+                                        <div class="views__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="views__item-copy">
+                                            <div class="views__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">User1234 viewed your profile</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start views__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views__item">
+                                        <div class="views__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="views__item-copy">
+                                            <div class="views__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">User1234 viewed your profile</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start views__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views__item">
+                                        <div class="views__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="views__item-copy">
+                                            <div class="views__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">User1234 viewed your profile</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start views__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views__item">
+                                        <div class="views__item-img" style="background-image: url('images/profile-image.png');">&nbsp;</div>
+                                        <div class="views__item-copy">
+                                            <div class="views__item-details">
+                                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld u-lh-1 u-margin-bottom-smallest-2">User1234 viewed your profile</p>
+                                                <p class="paragraph--smaller u-color-gray-lgt d-inline-flex align-items-center justify-content-start views__item-date"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smallest">22nd June 2018&nbsp;&nbsp;&nbsp;&nbsp;12:36pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-shape bg-shape--width-55 cards-slider" data-scroll-target="upcoming-events">
+            <div class="container bg-shape__content">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                        <div class="d-md-flex align-items-end justify-content-between">
+                            <div>
+                                <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2 u-color-white u-color-md-gray">UPCOMING EVENTS</p>
+                                <h2>MEET SOMEONE<br>NEAR YOU</h2>
+                            </div>
+                            <a href="#" class="d-none d-md-block btn">VIEW ALL EVENTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape__content cards-slider__list">
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container bg-shape__content">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                        <a href="#" class="btn btn--mobile-full d-md-none">VIEW ALL EVENTS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1">
+                        <div class="u-margin-bottom-big">
+                            <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">OPINION & ADVICE</p>
+                            <h2 class="u-margin-bottom-med u-margin-md-bottom-null u-color-white">LATEST NEWS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 u-margin-bottom-small u-margin-md-bottom-big u-margin-lg-bottom-null">
+                                <a href="#" class="news__main">
+                                    <img src="images/news-main.jpg" alt="News image" class="news__main-img u-margin-bottom-smallest u-margin-md-bottom-small-2">
+                                    <p class="paragraph--big-2 u-color-white u-font-main-bld">Are We Too Picky?</p>
+                                    <p class="u-color-gray-lgt u-margin-bottom-smallest">Once registered complete your personality questionnaire to find matches based on your personality.</p>
+                                    <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-1.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">The Perfect Profile Picture</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">Pouty selfies. Snapchat cartoon filters. Giant sunglasses. These photos won’t actually win you matches when…</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-2.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">Unexpected Outage 12/01/2018</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">At around 8:20am today Smartmatrimony experienced an outage which lasted for approximately…</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-3.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">Let Them Marry Who They Want</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">We should all have the freedom to marry who we want. What do you think?</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 u-align-inline-center">
+                        <a href="#" class="btn btn--mobile-full news__btn">VIEW ALL NEWS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-3 offset-md-0 footer__logo">
+                    <a href="#" class="logo logo--white"><img src="images/logo.svg" alt="Logo" class="logo__img"></a>
+                </div>
+                <nav class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 offset-md-1 footer__nav">
+                    <p class="u-color-white u-font-main-bld">Smart Matrimony</p>
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="u-color-white">First Floor<br>85 Great Portland Street<br>London<br>W1W 7LT</p>
+                        </div>
+                        <div class="col-5 col-sm-4 offset-sm-1">
+                            <ul class="footer__menu">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Legal Stuff</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ's</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-2 offset-md-0 offset-md-1 footer__social">
+                    <ul class="social align-items-center justify-content-start">
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                    <p class="paragraph--big u-color-gray">Smartmatrimony © 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

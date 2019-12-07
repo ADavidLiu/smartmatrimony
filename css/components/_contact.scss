@@ -1,0 +1,29 @@
+.contact {
+    overflow: hidden;
+
+    &__form {
+        position: relative;
+        margin-top: 2rem;
+        @include atMedium {
+            margin-top: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -2.5rem;
+            left: -2.083rem;
+            width: calc(100% + 4.167rem);
+            height: 150%;
+            background-color: $color-accent;
+            @include atSmall {
+                left: -50%;
+                width: 200%;
+            }
+            @include atMedium {
+                display: none;
+            }
+        }
+    }
+}

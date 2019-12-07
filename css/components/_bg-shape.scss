@@ -1,0 +1,92 @@
+.bg-shape {
+    position: relative;
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $color-primary;
+        @include atMedium {
+            width: 60%;
+        }
+        @include atLarge {
+            width: 68.5%;
+        }
+    }
+
+    &--accent {
+        &:before {
+            background-color: $color-accent;
+        }
+    }
+    
+    &--primary-drk {
+        &:before {
+            background-color: $color-primary-drk;
+        }
+    }
+
+    &--none {
+        &:before {
+            display: none;
+            @include atMedium {
+                display: block;
+            }
+        }
+    }
+    
+    &--width-67 {
+        &:before {
+            @include atMedium {
+                width: 67%;
+            }
+        }
+    }
+    
+    &--width-55 {
+        &:before {
+            @include atMedium {
+                width: 55%;
+            }
+        }
+    }
+
+    &--67 {
+        &:before {
+            height: 67%;
+            @include atSmall {
+                height: 68.5%;
+            }
+            @include atMedium {
+                height: 100%;
+            }
+        }
+    }
+
+    &--85 {
+        &:before {
+            height: 85%;
+            @include atMedium {
+                height: 100%;
+            }
+        }
+    }
+    
+    &--95 {
+        &:before {
+            height: 95%;
+            @include atMedium {
+                height: 100%;
+            }
+        }
+    }
+}

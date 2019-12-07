@@ -1,0 +1,221 @@
+.banner {
+    background-color: $color-dark-3;
+    padding: 0 0 3.333rem 0;
+    @include atMedium {
+        padding: 1.5rem 0 3.75rem 0;
+    }
+
+    &__profile {
+        text-align: center;
+        @include atMedium {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            margin: 0 auto 1.667rem auto;
+            @include atMedium {
+                height: 8.375rem;
+                width: 8.375rem;
+                min-height: 8.375rem;
+                min-width: 8.375rem;
+                margin: 0 1.25rem 0 0;
+            }
+
+            &--avatar {
+                background-color: $color-gray-alt-2;
+                background-size: 50% auto
+            }
+
+            &--empty {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: all .25s;
+                cursor: pointer;
+
+                &:before {
+                    pointer-events: none;
+                    content: url("../images/i-camera.svg");
+                }
+
+                span {
+                    pointer-events: none;
+                    white-space: pre;
+                    font-family: $font-main-reg;
+                    font-size: 1.667rem;
+                    line-height: 1;
+                    color: $color-white;
+                    margin-top: 5px;
+                    @include atMedium {
+                        font-size: 1.25rem;
+                        margin-top: 10px;
+                    }
+                }
+
+                &:hover {
+                    background-color: $color-accent;
+                }
+            }
+        }
+
+        &-facts {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            @include atMedium {
+                justify-content: flex-start;
+            }
+
+            & > * + * {
+                margin-left: 3rem;
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            & > * + * {
+                margin-left: 5px;
+            }
+        }
+
+        &-actions {
+            margin-left: 1.875rem;
+        }
+
+        &-help {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-icon {
+                margin-right: 7px;
+                transition: all .25s;
+                opacity: .7;
+            }
+
+            &-label {
+                transition: all .25s;
+            }
+
+            &:hover {
+                .banner__profile-help {
+                    &-icon {
+                        opacity: 1;
+                    }
+
+                    &-label {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bg-edit {
+        text-align: center;
+        transition: all .25s;
+        border: 1px dashed $color-gray-alt;
+        padding: 1.5625rem 1rem 1rem 1rem;
+        cursor: pointer;
+        @include atMedium {
+            width: 100%;
+            max-width: 209px;
+            margin: 0 0 0 auto;
+        }
+
+        &-icon {
+            margin-bottom: 10px;
+            transition: all .25s;
+            filter: opacity(.5) grayscale(50%);
+        }
+
+        &-label {
+            color: $color-gray-alt-6;
+        }
+
+        &-label {
+            transition: all .25s;
+        }
+
+        &:hover {
+            border-color: $color-white;
+
+            .banner__bg-edit {
+                &-icon {
+                    filter: none;
+                }
+
+                &-label {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: 4.167rem;
+        @include atMedium {
+            margin-top: 0;
+            max-width: 260px;
+            margin: 0 0 0 auto;
+        }
+
+        .btn {
+            justify-content: center;
+            @include atMedium {
+                justify-content: flex-start;
+            }
+
+            & + .btn {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+
+    &--bg {
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: cover;
+        position: relative;
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color-dark-3, .2);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(90deg, $color-dark-3 46%, rgba(29,15,36,0.00) 100%);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.progressbar {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: $color-gray-alt-7;
+    padding: 1.667rem 2.083rem;
+    @include atMedium {
+        padding: 0;
+        position: static;
+        background: transparent;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 1.9167rem;
+        margin-bottom: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include atMedium {
+            font-size: 1.4375rem;
+            display: block;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        pointer-events: none;
+        user-drag: none; 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        
+        &::selection {
+            background-color: transparent;
+        }
+    }
+}

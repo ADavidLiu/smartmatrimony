@@ -1,0 +1,56 @@
+.footer {
+    background-color: $color-dark-4;
+    padding: 2.5rem 0 5rem 0;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    @include atMedium {
+        padding: 6.25rem 0 5.625rem 0;
+    }
+
+    &__logo {
+        margin-bottom: 3.667rem;
+        @include atMedium {
+            margin-bottom: 0;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 3rem;
+        @include atMedium {
+            margin-bottom: 0;
+            margin-top: 1.5rem;
+        }
+        @include atLarge {
+            margin-top: 2.25rem;
+        }
+        @include atExtralarge {
+            margin-top: 2.75rem;
+        }
+    }
+
+    &__social {
+        @include atMedium {
+            margin-top: 2.75rem;
+        }
+        @include atLarge {
+            margin-top: 3.25rem;
+        }
+        @include atExtralarge {
+            margin-top: 4.125rem;
+        }
+    }
+
+    &__menu {
+        &-item {
+            @extend .paragraph;
+        }
+
+        &-link {
+            @include linkStates($color-white, none);
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

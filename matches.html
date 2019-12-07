@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matrimony | Half Your Deen. All Of Our Purpose.</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/Smartmatrimony_TT_Commons_+_Futura.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="popup message-popup" data-popup-target="popup-message">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-message">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header">
+                                        <h4>SEND A MESSAGE TO <span class="message-popup__name"></span></h4>
+                                    </div>
+                                    <div class="popup__content-main-principal">
+                                        <form action="#" class="message-popup__form">
+                                            <textarea placeholder="Type your message..." class="dark u-margin-bottom-big"></textarea>
+                                            <div class="u-align-inline-center">
+                                                <button class="btn btn--mobile-full btn--padding btn--bg-primary btn--round">SEND</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup favourite-popup" data-popup-target="popup-favourite">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="popup__content">
+                                <div class="popup__content-actions">
+                                    <div class="popup__close" data-popup-trigger="popup-favourite">
+                                        <p class="u-color-white">Close</p>
+                                        <img src="images/i-close.svg" alt="Close popup" class="popup__close-icon">
+                                    </div>
+                                </div>
+                                <div class="popup__content-main">
+                                    <div class="popup__content-main-header popup__content-main-header--only">
+                                        <h4>YOU HAVE <span class="favourite-popup__state"></span> <span class="favourite-popup__name"></span> AS A FAVOURITE!</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto header__main">
+                    <a href="#" class="d-md-none logo logo--small">
+                        <img src="images/logo-small.svg" alt="Logo" class="logo__img">
+                    </a>
+                    <a href="#" class="d-none d-md-block logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="col-auto d-md-none header__main">
+                    <button class="header__btn">
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                        <span class="header__btn-line">&nbsp;</span>
+                    </button>
+                </div>
+                <nav class="col-12 col-md-auto header__nav">
+                    <div class="header__nav-content">
+                        <ul class="header__menu menu">
+                            <li class="order-md-3 menu__item menu__item--active">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-home.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">HOME</p>
+                                </a>
+                            </li>
+                            <li class="order-md-1 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-search.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">SEARCH</p>
+                                </a>
+                            </li>
+                            <li class="order-md-2 menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-messages.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MESSAGES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-heart.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR MATCHES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-star.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">YOUR FAVOURITES</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-eye.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">PROFILE VISITORS</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-profile.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY PROFILE</p>
+                                </a>
+                            </li>
+                            <li class="d-md-none menu__item">
+                                <a href="#" class="menu__link">
+                                    <img src="images/i-gear.svg" alt="Icon" class="menu__icon">
+                                    <p class="menu__label">MY ACCOUNT</p>
+                                </a>
+                            </li>
+                            <li class="order-md-12 d-none d-md-inline-block menu__item menu__item--alt">
+                                <div class="menu__dropdown">
+                                    <img src="images/i-person.svg" alt="Icon" class="menu__icon menu__dropdown-trigger">
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY PROFILE</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">MY ACCOUNT</a></li>
+                                        <li class="menu__dropdown-list-item"><a href="#" class="menu__dropdown-list-link">LOGOUT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__contact">
+                            <div class="header__contact-info">
+                                <p class="paragraph--med u-color-primary u-font-main-bld u-margin-bottom-smallest">ADDRESS</p>
+                                <p class="paragraph--med u-color-white">
+                                    <span class="u-font-main-bld">Smart Matrimony</span>
+                                    <br>First Floor
+                                    <br>85 Great Portland Street
+                                    <br>London
+                                    <br>W1W 7LT</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <ul class="social align-items-center justify-content-start">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-facebook social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-twitter social__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <i class="fab fa-instagram social__icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paragraph--big">
+                                    <a href="#" class="u-color-white">Logout</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="nav">
+            <div class="container nav__container">
+                <div class="nav__menu">
+                    <div class="nav__track">
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-search-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">SEARCH</p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-messages-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label nav__label--tag">MESSAGES <span class="nav__tag nav__tag--big">12</span></p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">
+                                <img src="images/i-matches-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label nav__label--tag">YOUR MATCHES <span class="nav__tag">8</span></p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-favorites-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">YOUR FAVOURTIES</p>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="#" class="nav__link">
+                                <img src="images/i-visitors-primary.svg" alt="Icon" class="nav__icon">
+                                <p class="nav__label">PROFILE VISITORS</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="profile-cards u-padding-top-med-2 u-padding-md-top-3 u-padding-md-bottom-big-2 bg-shape bg-shape--width-55 bg-shape--primary-drk">
+            <div class="container bg-shape__content">
+                <div class="row profile-cards__intro">
+                    <div class="col-12">
+                        <p class="paragraph--small u-color-white u-color-md-gray u-font-titles">MATCHES</p>
+                        <h2 class="u-margin-bottom-med-3 u-margin-vertical-smaller u-margin-md-bottom-big">NEW MATCHES</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container profile-cards__container bg-shape__content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile-cards__list profile-cards__list--finite profile-cards__list--static">
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="profile-cards u-padding-top-med-2 u-padding-bottom-smaller u-padding-md-top-small u-padding-md-bottom-med">
+            <div class="container">
+                <div class="row u-margin-bottom-med u-margin-md-bottom-big-3">
+                    <div class="col-12">
+                        <h4 class="heading-quaternary--big">OLDER MATCHES</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-cards__container container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile-cards__list profile-cards__list--finite profile-cards__list--static u-margin-md-bottom-big-3">
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item profile-cards__item--no-img">
+                                <a href="#" class="card card--no-scale">
+                                    <div class="card__inner">
+                                        <div class="card__media">
+                                            <div class="card__info justify-content-between">
+                                                <div class="card__badge u-bg-gold">
+                                                    <p class="paragraph--med u-color-dark-4">GOLD MEMBER</p>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                                    <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                            <p class="paragraph--big">34 years old • Preston</p>
+                                            <p class="paragraph--big">Architect • Masters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="profile-cards__item">
+                                <a href="#" class="card card--no-scale">
+                                <div class="card__inner">
+                                    <div class="card__media" style="background-image: url('images/profile-card-woman.jpg');">
+                                        <div class="card__info justify-content-end">
+                                            <div class="card__btn" data-popup-trigger="popup-message" data-profile-name="Julie"><img src="images/i-envelope.svg" alt="Envelope icon" class="card__btn-icon"></div>
+                                            <div class="card__btn card__btn--star" data-popup-trigger="popup-favourite" data-profile-name="Julie"><img src="images/i-star-white.svg" alt="Star icon" class="card__btn-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card__copy">
+                                        <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Julie</p>
+                                        <p class="paragraph--big">34 years old • Preston</p>
+                                        <p class="paragraph--big">Architect • Masters</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container u-margin-bottom-huge-2 u-margin-md-bottom-null">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="u-align-inline-center">
+                            <a href="#" class="btn btn--mobile-full btn--padding btn--bg-primary">VIEW MORE MATCHES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-none">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box promo-card">
+                            <div class="box__content box__content--gold">
+                                <div class="box__main">
+                                    <img src="images/i-heart.svg" alt="Icon" class="promo-card__icon u-margin-bottom-small-2">
+                                    <p class="paragraph--big-3 u-font-titles u-color-dark-3 u-lh-1 u-margin-bottom-smallest">DON’T MISS<br class="u-lh-1">OUT ON POTENTIAL<br class="u-lh-1">MATCHES!</p>
+                                    <p class="paragraph--big u-lh-1-25">Improve your chance of meeting someone special by upgrading to a <span class="u-font-main-bld u-color-gold u-lh-1-25">PREMIUM</span> account and getting a personal matchmaker.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-3 offset-md-0 footer__logo">
+                    <a href="#" class="logo logo--white"><img src="images/logo.svg" alt="Logo" class="logo__img"></a>
+                </div>
+                <nav class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 offset-md-1 footer__nav">
+                    <p class="u-color-white u-font-main-bld">Smart Matrimony</p>
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="u-color-white">First Floor<br>85 Great Portland Street<br>London<br>W1W 7LT</p>
+                        </div>
+                        <div class="col-5 col-sm-4 offset-sm-1">
+                            <ul class="footer__menu">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Legal Stuff</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ's</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-2 offset-md-0 offset-md-1 footer__social">
+                    <ul class="social align-items-center justify-content-start">
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                    <p class="paragraph--big u-color-gray">Smartmatrimony © 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

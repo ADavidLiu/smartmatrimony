@@ -1,0 +1,10 @@
+.our-process {
+    &__copy {
+        @include atMedium {
+            max-width: 390px;
+        }
+        @include atHuge {
+            max-width: 415px;
+        }
+    }
+}

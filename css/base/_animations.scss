@@ -1,0 +1,19 @@
+@keyframes autofill {
+    to {
+        color: $color-white;
+        background: transparent;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(1.333rem);
+        @include atMedium {
+            transform: translateY(1rem);
+        }
+    }
+}

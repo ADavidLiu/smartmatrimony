@@ -1,0 +1,17 @@
+.matchmaking {
+    position: relative;
+
+    &__img {
+        width: 90%;
+        margin-bottom: 2.5rem;
+        @include atMedium {
+            margin-bottom: 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 50%;
+            max-width: 824px;
+        }
+    }
+}

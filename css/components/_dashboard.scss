@@ -1,0 +1,17 @@
+.dashboard {
+    &__intro {
+        border-bottom: 1px solid $color-gray-alt-4;
+
+        &-img {
+            width: 100%;
+            pointer-events: none;
+            @include atMedium {
+                margin-top: -3.125rem;
+            }
+
+            &::selection {
+                background-color: transparent;
+            }
+        }
+    }
+}

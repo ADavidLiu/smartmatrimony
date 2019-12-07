@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matrimony | Half Your Deen. All Of Our Purpose.</title>
+    <link rel="shortcut icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/Smartmatrimony_TT_Commons_+_Futura.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="hero">
+            <header class="header header--inner">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto header__main">
+                            <a href="#" class="d-md-none logo logo--small"><img src="images/logo-small.svg" alt="Logo" class="logo__img"></a>
+                            <a href="#" class="d-none d-md-block logo"><img src="images/logo.svg" alt="Logo" class="logo__img"></a>
+                        </div>
+                        <div class="col-auto d-md-none header__main">
+                            <button class="header__btn">
+                                <span class="header__btn-line">&nbsp;</span>
+                                <span class="header__btn-line">&nbsp;</span>
+                                <span class="header__btn-line">&nbsp;</span>
+                            </button>
+                        </div>
+                        <nav class="col-12 col-md-auto header__nav">
+                            <div class="header__nav-content">
+                                <ul class="header__menu menu">
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link" data-hero-state="register">
+                                            <p class="menu__label">REGISTER</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link" data-hero-state="login">
+                                            <p class="menu__label">LOGIN</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">
+                                            <p class="menu__label">MATCHMAKER?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__contact">
+                                    <div class="header__contact-info">
+                                        <p class="paragraph--med u-color-primary u-font-main-bld u-margin-bottom-smallest">ADDRESS</p>
+                                        <p class="paragraph--med u-color-white"><span class="u-font-main-bld">Smart Matrimony</span><br>First Floor<br>85 Great Portland Street<br>London<br>W1W 7LT</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <ul class="social align-items-center justify-content-start">
+                                            <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook social__icon"></i></a></li>
+                                            <li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i></a></li>
+                                            <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i></a></li>
+                                        </ul>
+                                        <p class="paragraph--big"><a href="#" class="u-color-white">Logout</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="hero__content">
+                <div class="hero__content-register">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6 u-align-inline-center u-align-md-inline-left u-margin-bottom-med-3 u-margin-md-bottom-med-3">
+                                <h1 class="u-color-white">HALF YOUR DEEN.<br><span class="u-color-primary">ALL</span> OUR PURPOSE.</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                                <form action="#" class="form">
+                                    <div class="form__group d-flex align-items-center justify-content-between justify-content-sm-start">
+                                        <p class="paragraph--med-2 u-color-white u-whitespace-nowrap">I am a</p>
+                                        
+                                        <input type="radio" name="gender" class="form__selection" id="man" required checked>
+                                        <label for="man">man</label>
+
+                                        <input type="radio" name="gender" class="form__selection" id="woman" required>
+                                        <label for="woman">woman</label>
+                                    </div>
+                                    <div class="form__group u-margin-top-med-3 u-margin-md-top-med-2">
+                                        <label for="email-address">Email address</label>
+                                        <input type="email" id="email-address" placeholder="Enter email address" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="re-password">Confirm password</label>
+                                        <input type="password" id="re-password" placeholder="Re-enter password" required>
+                                    </div>
+                                    <div class="form__footer u-align-inline-center u-align-md-inline-left">
+                                        <button class="btn btn--bg-primary btn--full u-margin-bottom-smaller">GET STARTED</button>
+                                        <p class="paragraph--small u-color-gray-alt-3 u-lh-1-5">By registering you agree to the <a href="#" class="u-color-white">Terms and Conditions</a> and <a href="#" class="u-color-white">Privacy Policy</a>. <br class="d-none d-sm-block">You will receive all communication from Smart Matrimony via email.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__content-login">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6 u-align-inline-center u-align-md-inline-left">
+                                <h1 class="u-color-white">LOGIN TO<br>YOUR ACCOUNT</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                                <form action="#" class="form">
+                                    <div class="form__group u-margin-top-med-3 u-margin-md-top-med-2">
+                                        <label for="email-address-login">Email address</label>
+                                        <input type="email" id="email-address-login" placeholder="Enter email address" required>
+                                    </div>
+                                    <div class="form__group u-margin-bottom-med">
+                                        <label for="password-login">Password</label>
+                                        <input type="password" id="password-login" placeholder="Enter password" required>
+                                    </div>
+                                    <div class="form__group d-flex align-items-center justify-content-between">
+                                        <div class="form__checkbox">
+                                            <input id="remember-me" type="checkbox">
+                                            <label for="remember-me" class="paragraph paragraph--small u-color-white">Remember Me</label>
+                                        </div>
+                                        <a href="#" class="paragraph paragraph--small u-color-gray-alt-3 u-underline">Forgot your password?</a>
+                                    </div>
+                                    <div class="form__footer u-align-inline-center u-align-md-inline-left">
+                                        <button class="btn btn--bg-primary btn--full u-margin-bottom-smaller">LOGIN</button>
+                                        <p class="paragraph--small u-color-gray-alt-3 u-lh-1-5">Not a member yet? <a href="#" class="u-color-white u-underline" data-hero-state="register">Register for FREE</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll ">
+                <div class="scroll-icon">&nbsp;</div>
+            </div>
+        </section>
+        <section class="u-padding-top-big u-padding-bottom-med">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 u-align-inline-center">
+                        <p class="paragraph--med u-font-main-bld u-margin-bottom-small">ABOUT US</p>
+                        <h2 class="u-margin-bottom-med u-margin-md-bottom-med-2">WELCOME TO
+                            <br>
+                            <span class="u-color-primary">SMART</span> MATRIMONY</h2>
+                        <p>Our unique combination of services can help you meet like minded single Muslims and help you to find
+                            your life partner. We believe you deserve to find your true love and we are with you every step
+                            of the way until you do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="u-padding-bottom-big u-padding-md-bottom-big-2 u-padding-md-top-big-3 bg-shape bg-shape--85">
+            <div class="container bg-shape__content">
+                <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1">
+                        <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">DEEPER CONNECTIONS</p>
+                        <h2 class="u-margin-bottom-med u-margin-md-bottom-null">WHAT MAKES<br>US DIFFERENT</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape__content container features">
+                <img src="images/what-makes-us-different.jpg" alt="Woman smiling around two men on a table" class="features__img">
+                <div class="features__content">
+                    <div class="d-flex align-items-start features__item u-cursor-pointer" data-scroll-to="our-process">
+                        <img src="images/i-heart.svg" alt="Icon" class="features__item-icon">
+                        <div class="features__item-content">
+                            <h4 class="u-margin-bottom-smallest u-margin-md-bottom-small">TARGETED
+                                <br>MATCHES</h4>
+                            <p class="u-color-white">We will provide individual matches tailored to you based on an extensive personality questionnaire.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start features__item u-cursor-pointer" data-scroll-to="our-process">
+                        <img src="images/i-sequence.svg" alt="Icon" class="features__item-icon">
+                        <div class="features__item-content">
+                            <h4 class="u-margin-bottom-smallest u-margin-md-bottom-small">TAILORED
+                                <br>MATCHMAKING</h4>
+                            <p class="u-color-white">Our experienced team of matchmakers will support you on a 1-2-1 basis to help you find your perfect
+                                partner.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start features__item u-cursor-pointer" data-scroll-to="upcoming-events">
+                        <img src="images/i-ticket.svg" alt="Icon" class="features__item-icon">
+                        <div class="features__item-content">
+                            <h4 class="u-margin-bottom-smallest u-margin-md-bottom-small">SINGLES
+                                <br>EVENTS</h4>
+                            <p class="u-color-white">Our events, exclusive to members, are relaxed, fun and intimate.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start features__item">
+                        <img src="images/i-check.svg" alt="Icon" class="features__item-icon">
+                        <div class="features__item-content">
+                            <h4 class="u-margin-bottom-smallest u-margin-md-bottom-small">OUR
+                                <br>VALUES</h4>
+                            <p class="u-color-white">Our values define who we are and set us apart; confidential, friendly, trustworthy, honest and
+                                Islamic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="u-padding-top-big u-padding-md-top-big-4 how">
+            <div class="container how__content">
+                <div class="row">
+                    <div class="col-12 col-md-5 offset-md-1 u-padding-md-bottom-big-3">
+                        <div class="u-margin-bottom-huge u-margin-md-bottom-med-2">
+                            <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">QUICK AND EASY</p>
+                            <h2 class="u-margin-bottom-med u-margin-md-bottom-null">HOW DOES<br>IT WORK?</h2>
+                        </div>
+                        <ul class="steps how__steps">
+                            <li class="steps__item">
+                                <div class="steps__item-sign">
+                                    <p class="paragraph--huge u-color-white u-font-titles">1</p>
+                                </div>
+                                <div class="steps__item-content">
+                                    <p>Register for
+                                        <span class="u-font-main-dem">free</span> and create your account.</p>
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-sign">
+                                    <p class="paragraph--huge u-color-white u-font-titles">2</p>
+                                </div>
+                                <div class="steps__item-content">
+                                    <p>Answer the basics to help us create your profile and to narrow down the people who meet
+                                        your personal criteria.</p>
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-sign">
+                                    <p class="paragraph--huge u-color-white u-font-titles">3</p>
+                                </div>
+                                <div class="steps__item-content">
+                                    <p>Connect with individuals you are most compatible with.</p>
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-sign">
+                                    <p class="paragraph--huge u-color-white u-font-titles">4</p>
+                                </div>
+                                <div class="steps__item-content">
+                                    <p>Review the profiles of everyone who we've determined to be a right for you, for free.</p>
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-sign">
+                                    <p class="paragraph--huge u-color-white u-font-titles">5</p>
+                                </div>
+                                <div class="steps__item-content">
+                                    <p>Pick a plan that fits your needs and start communicating at your own pace.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 d-flex align-items-center align-items-lg-end">
+                        <img src="images/how-works.png" alt="Woman smiling" class="how__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="u-padding-top-big-2 u-padding-bottom-huge u-padding-md-bottom-huge u-padding-md-top-huge matchmaking" data-scroll-target="our-process">
+            <img src="images/tailored-matchmaking.png" alt="iPad showing a questionnaire" class="matchmaking__img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-7">
+                        <div class="u-margin-bottom-med">
+                            <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">OUR PROCESS</p>
+                            <h2 class="u-margin-bottom-med u-margin-md-bottom-null">TARGETED
+                                <br class="d-none d-md-block">MATCHES…
+                                <br>MEET TAILORED
+                                <br class="d-none d-md-block">MATCHMAKING</h2>
+                        </div>
+                        <div class="our-process__copy">
+                            <p class="u-margin-bottom-med">We understand you want to meet people that you connect with on a more meaningful level. That is why
+                                we worked with experienced psychologists to develop our personality questionnaire which analyses
+                                your personality across 9 key attributes. Our matching algorithm then matches you with others
+                                based on who you are and what you are looking for. Like magic!</p>
+                            <p>For those who want a more personal touch our team of experienced matchmakers are on hand to help.
+                                Your personal matchmaker will spend the time to get to know you and what you are looking for.
+                                They will boost your search by searching across our extensive network of members as well as coordinating
+                                with other matchmakers to help you find someone special. Let the search begin!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-shape bg-shape--width-55 cards-slider" data-scroll-target="upcoming-events">
+            <div class="container bg-shape__content">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                        <div class="d-md-flex align-items-end justify-content-between">
+                            <div>
+                                <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2 u-color-white u-color-md-gray">UPCOMING EVENTS</p>
+                                <h2>MEET SOMEONE<br>NEAR YOU</h2>
+                            </div>
+                            <a href="#" class="d-none d-md-block btn">VIEW ALL EVENTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape__content cards-slider__list">
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card__inner">
+                        <div class="card__media" style="background-image: url('images/card-img-1.jpg');">
+                            <p class="paragraph--med u-font-main-bld u-color-white card__tag">EVENT</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="u-margin-bottom-med-2">
+                                <p class="paragraph--big-2 u-color-dark-4 u-font-main-bld">Cooking Lessons</p>
+                                <p class="paragraph--big">Parties and family gatherings are popular this time of year…</p>
+                            </div>
+                            <p class="paragraph--big u-color-gray-lgt d-inline-flex align-items-center justify-content-start"><img src="images/i-time.svg" alt="Clock icon" class="u-margin-right-smaller">22nd June 2018</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container bg-shape__content">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                        <a href="#" class="btn btn--mobile-full d-md-none">VIEW ALL EVENTS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-11">
+                        <div class="row">
+                            <div class="col-12 col-md-2 u-margin-bottom-med-2 u-margin-md-bottom-null">
+                                <p class="paragraph--med u-font-main-bld">TESTIMONIALS</p>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="testimonials__slider">
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials__item">
+                                        <img src="images/i-user.svg" alt="User image" class="testimonials__item-img">
+                                        <div class="testimonials__item-copy">
+                                            <h2 class="heading-secondary--med u-font-main-reg u-margin-bottom-med">Why, sometimes I've believed as many as six impossible things before breakfast.</h2>
+                                            <p class="paragraph--big u-font-main-dem">Lewis Carroll — Alice in Wonderland</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1">
+                        <div class="u-margin-bottom-big">
+                            <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">OPINION & ADVICE</p>
+                            <h2 class="u-margin-bottom-med u-margin-md-bottom-null u-color-white">LATEST NEWS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 u-margin-bottom-small u-margin-md-bottom-big u-margin-lg-bottom-null">
+                                <a href="#" class="news__main">
+                                    <img src="images/news-main.jpg" alt="News image" class="news__main-img u-margin-bottom-smallest u-margin-md-bottom-small-2">
+                                    <p class="paragraph--big-2 u-color-white u-font-main-bld">Are We Too Picky?</p>
+                                    <p class="u-color-gray-lgt u-margin-bottom-smallest">Once registered complete your personality questionnaire to find matches based on your personality.</p>
+                                    <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-1.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">The Perfect Profile Picture</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">Pouty selfies. Snapchat cartoon filters. Giant sunglasses. These photos won’t actually win you matches when…</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-2.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">Unexpected Outage 12/01/2018</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">At around 8:20am today Smartmatrimony experienced an outage which lasted for approximately…</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="news__item d-flex align-items-start justify-content-start">
+                                    <img src="images/news-3.jpg" alt="News image" class="news__item-img order-md-2">
+                                    <div class="news__item-copy order-md-1">
+                                        <p class="paragraph--big-2 u-color-white u-font-main-bld u-lh-1 u-margin-bottom-smallest">Let Them Marry Who They Want</p>
+                                        <p class="u-color-gray-lgt u-margin-bottom-smallest d-none d-md-block">We should all have the freedom to marry who we want. What do you think?</p>
+                                        <p class="paragraph--big u-color-gray-alt-2">22/01/2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 u-align-inline-center">
+                        <a href="#" class="btn btn--mobile-full news__btn">VIEW ALL NEWS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-7 offset-md-0 featured__media" style="background-image: url('images/help-us.jpg');">&nbsp;</div>
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-7">
+                        <div class="featured__copy">
+                            <p class="paragraph--med u-font-main-bld u-margin-bottom-smallest u-margin-md-bottom-small-2">CHARITY</p>
+                            <h2 class="u-margin-bottom-med">HELP US GIVE<br>SOMETHING BACK</h2>
+                            <p class="paragraph--big-2 u-margin-bottom-small u-lh-1-25">Indeed, the men who practice charity and the women who practice charity … it will be multiplied for them, and they will have a noble reward. <span class="u-color-primary">Qur’an 57:18</span></p>
+                            <p>We acknowledge that we are privileged enough to live in a part of the world where our daily needs are met. Alhamdulillah we are blessed. However, there are many people who are not as fortunate. In line with our Islamic values Smartmatrimony will donate no less than 2.5% of our net profit annually to charity. You can even help us choose which one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured featured--no-border story">
+            <div class="featured__media featured__media--alt" style="background-image: url('images/our-story-man.jpg');">&nbsp;</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0">
+                        <div class="featured__copy">
+                            <h2 class="u-color-white">OUR STORY</h2>
+                            <p class="paragraph--big-2 u-color-primary-lgt u-margin-bottom-smallest">Asalaam Alaikum</p>
+                            <p class="u-color-white u-margin-bottom-med">Like yourself, I too have been looking for that special someone. I have tried many different avenues over the years but the end result was always the same. The more I spoke to others the more I realised they too had similar experiences.</p>
+                            <p class="u-color-white u-margin-bottom-med">I thought to myself … there must be a better way?</p>
+                            <p class="u-color-white u-margin-bottom-med">This is our story.</p>
+                            <a href="#" class="btn btn--mobile-full btn--primary-drk">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-3 offset-md-0 footer__logo">
+                    <a href="#" class="logo logo--white"><img src="images/logo.svg" alt="Logo" class="logo__img"></a>
+                </div>
+                <nav class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 offset-md-1 footer__nav">
+                    <p class="u-color-white u-font-main-bld">Smart Matrimony</p>
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="u-color-white">First Floor<br>85 Great Portland Street<br>London<br>W1W 7LT</p>
+                        </div>
+                        <div class="col-5 col-sm-4 offset-sm-1">
+                            <ul class="footer__menu">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Legal Stuff</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ's</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-2 offset-md-0 offset-md-1 footer__social">
+                    <ul class="social align-items-center justify-content-start">
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                    <p class="paragraph--big u-color-gray">Smartmatrimony © 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app-dist.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.messages {
+    &__list {
+        max-height: 523px;
+        overflow-y: auto;
+        @include atMedium {
+            max-height: 471px;
+        }
+        @include atLarge {
+            max-height: 500px;
+        }
+        @include atExtralarge {
+            max-height: 350px;
+        }
+    }
+
+    &__track {
+        overflow: hidden;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        &-img {
+            height: 7.5rem;
+            height: 7.5rem;
+            min-width: 7.5rem;
+            min-width: 7.5rem;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-right: 2.083rem;
+            @include atMedium {
+                height: 5.625rem;
+                width: 5.625rem;
+                min-height: 5.625rem;
+                min-width: 5.625rem;
+                margin-right: 1.5625rem;
+            }
+        }
+
+        &-copy {
+            flex: 1;
+            @include atExtralarge {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .btn {
+                white-space: nowrap;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                @include atSmall {
+                    white-space: normal;
+                    width: auto;
+                    padding-left: 1.25rem;
+                    padding-right: 1.25rem;
+                }
+                @include atExtralarge {
+                    white-space: nowrap;
+                }
+
+                span {
+                    @include atMedium {
+                        transform: translateY(-1px);
+                    }
+                }
+            }
+        }
+
+        &-date {
+            @include atExtralarge {
+                white-space: nowrap;
+            }
+        }
+
+        &-details {
+            margin-bottom: 1.333rem;
+            @include atExtralarge {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        & + & {
+            margin-top: 3.333rem;
+            @include atMedium {
+                margin-top: 2.5rem;
+            }
+        }
+    }
+}

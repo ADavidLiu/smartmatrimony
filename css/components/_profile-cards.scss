@@ -1,0 +1,110 @@
+.profile-cards {
+    &__container {
+        padding: 0;
+        @include atSmall {
+            max-width: 100%;
+        }
+        @include atMedium {
+            padding: 0 15px;
+            max-width: 720px;
+        }
+        @include atLarge {
+            max-width: 960px;
+        }
+        @include atExtralarge {
+            max-width: 1140px;
+        }
+
+        .col-12 {
+            padding: 0;
+            @include atMedium {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    &__list {
+        @include atMedium {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 0 -1.25rem;
+        }
+
+        .slick {
+            &-list {
+                margin: 0 -20px;
+                margin-left: -4.5rem;
+            }
+    
+            &-slide {
+                margin: 0 10px;
+            }
+        }
+
+        &--no-slider {
+            .profile-cards__item {
+                padding: 0;
+    
+                & + .profile-cards__item {
+                    margin-top: 3.333rem;
+                    @include atMedium {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item {
+        padding: 1rem 0 3.333rem 0;
+        @include atMedium {
+            padding: 0;
+            width: calc(33.333% - 2.5rem);
+            margin: 0 1.25rem 2.5rem 1.25rem;
+        }
+        @include atLarge {
+            width: calc(25% - 2.5rem);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        .card {
+            max-width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &--no-img {
+            .card {
+                &__media {
+                    background-image: url("../images/i-person-white.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                    background-color: $color-dark-4;
+                }
+            }
+        }
+    }
+
+    &--bar {
+        &:after {
+            @include atMedium {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 6rem;
+                background-color: $color-white;
+            }
+        }
+    }
+}
