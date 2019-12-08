@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="18px" viewBox="0 0 330 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="5.91848906%" y1="50%" x2="97.9402528%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F89D46" offset="0%"></stop>
+            <stop stop-color="#F16447" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Blog-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Questionnaire-mobile-(1)" transform="translate(-22.000000, -799.000000)">
+            <g id="Group-5" transform="translate(22.000000, 760.000000)">
+                <g id="Group-7" transform="translate(0.000000, 39.000000)">
+                    <rect id="Rectangle-19" fill="#D8D8D8" x="0" y="5" width="330" height="7" rx="3.5"></rect>
+                    <circle id="Oval-6" fill="#D8D8D8" cx="9" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy" fill="#D8D8D8" cx="321" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy-2" fill="#D8D8D8" cx="269" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy-3" fill="#D8D8D8" cx="217" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy-4" fill="#D8D8D8" cx="165" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy-5" fill="#D8D8D8" cx="113" cy="9" r="9"></circle>
+                    <circle id="Oval-6-Copy-6" fill="#D8D8D8" cx="61" cy="9" r="9"></circle>
+                    <path d="M312.93552,4.99999927 C314.408223,2.0365627 317.466279,0 321,0 C325.970563,0 330,4.02943725 330,9 C330,13.9705627 325.970563,18 321,18 C317.081344,18 313.747626,15.4955771 312.512117,12 L277.487883,12 C276.252374,15.4955771 272.918656,18 269,18 C264.029437,18 260,13.9705627 260,9 C260,4.02943725 264.029437,0 269,0 C272.533721,0 275.591777,2.0365627 277.06448,4.99999927 L312.935517,5 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
